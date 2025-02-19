@@ -19,12 +19,6 @@ in
       libusb1
       platformio-core
       (mypython pkgs)
-      zsh
     ]);
-    # NOTE:just use nix develop or do this in your .envrc to avoid a load loop:
-    # https://github.com/direnv/direnv/issues/992#issuecomment-1744989487
-    runScript = ''
-      ${pkgs.zsh}/bin/zsh
-    '';
   })
   .env
