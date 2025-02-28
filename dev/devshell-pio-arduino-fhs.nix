@@ -21,8 +21,8 @@ in
       (mypython pkgs)
       fish
     ]);
-    runScript = ''
-      ${pkgs.fish}/bin/fish
-    '';
+    # runScript = ''
+    #   ${pkgs.fish}/bin/fish
+    # '';
   })
   .env
